@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class bubble {
     public static void main(String[] args) {
         int[] arr = {5,7,3,9,2,1};
-        bubble(arr, arr.length-1,0);
+        bubbleSort(arr, arr.length-1,0);
         System.out.println(Arrays.toString(arr));
     }
 
-    static void bubble(int[] arr, int i, int j){
+    static void bubbleSort(int[] arr, int i, int j){
         if(i==0){
             return ;
         }
@@ -19,9 +19,9 @@ public class bubble {
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
             }
-            bubble(arr, i, j+1);
+            bubbleSort(arr, i, j+1);
         }else{
-            bubble(arr, i-1, 0);
+            bubbleSort(arr, i-1, 0);
         }
     }
 

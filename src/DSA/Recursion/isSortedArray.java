@@ -1,8 +1,5 @@
 package DSA.Recursion;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class isSortedArray {
 
     public static void main(String[] args) {
